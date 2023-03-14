@@ -50,6 +50,18 @@
     object-fit: cover;
 }
 
+/* .thumb {
+    height: 100%;
+    opacity: 0.5;
+}
+
+
+.thumb img {
+    width: 100%;
+    height: calc((300px) / 5);
+    object-fit: cover;
+} */
+
 .thumb.active {
     border: 2px solid #ccc;
     opacity: 1;
