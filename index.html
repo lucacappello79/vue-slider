@@ -33,7 +33,7 @@
                     <div class="next" @click="nextSlide()"></div>
 
                     <div>
-                        <div v-for="(slide, index) in slides" class="thumb">
+                        <div v-for="(slide, index) in slides" class="thumb" v-bind:class="index === activeImageIndex ? 'active' : ''">
                           <img v-bind:src="slide.image" v-bind:alt="slide.title" />
                         </div>
                     </div>
