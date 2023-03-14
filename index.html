@@ -32,9 +32,15 @@
                     <div class="prev" @click="prevSlide()"></div>
                     <div class="next" @click="nextSlide()"></div>
 
+                    <!-- <div>
+                        <div v-for="(slide, index) in slides" class="thumb" v-bind:class="index === activeImageIndex ? 'active' : ''">
+                          <img v-bind:src="slide.image" v-bind:alt="slide.title"  />
+                        </div>
+                    </div> -->
+
                     <div>
                         <div v-for="(slide, index) in slides" class="thumb" v-bind:class="index === activeImageIndex ? 'active' : ''">
-                          <img v-bind:src="slide.image" v-bind:alt="slide.title" />
+                          <img v-bind:src="slide.image" v-bind:alt="slide.title" @click="makeItBig(index)"  />
                         </div>
                     </div>
 

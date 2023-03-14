@@ -66,6 +66,12 @@ createApp({
         }
   
       },
+
+      makeItBig: function(index) {
+
+        this.activeImageIndex = index;
+
+      }
   
 
   }
