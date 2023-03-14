@@ -17,9 +17,10 @@
     <div id="app">
 
         <div class="container">
-            <div class="slider-wrapper" tabindex="0">
+            <!-- <div class="slider-wrapper" tabindex="0"> -->
+            <div class="slider-wrapper" tabindex="0"></div>
 
-                <div class="item">
+                <div class="item" @mouseover="startTimer" @mouseout="stopTimer">
                     <!-- <img src="img/01.webp" alt="Spiderman" /> -->
                     <img v-bind:src="slides[activeImageIndex].image" alt="slides[activeImageIndex].title" />
                     <div class="text">

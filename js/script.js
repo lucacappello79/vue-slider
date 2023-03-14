@@ -34,6 +34,7 @@ createApp({
         ],
 
         activeImageIndex: 0,
+        timer: null,
 
     }
 
@@ -71,7 +72,31 @@ createApp({
 
         this.activeImageIndex = index;
 
-      }
+      },
+
+      startTimer: function() {
+
+        this.stopTimer();
+
+        this.timer = setInterval(() => {
+
+          this.nextSlide();
+          
+        }, 3000);
+
+      },
+
+      stopTimer: function() {
+
+        if (this.timer) {
+
+          clearInterval(this.timer);
+
+          this.timer = null;
+
+        }
+        
+      },
   
 
   }
